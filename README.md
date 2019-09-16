@@ -5,8 +5,8 @@ Demo app
 Prerequisites
 1. Mac machine required
 2. XCode installed. 
-3. Pod install : See Note Below *
-4. git installed
+3. Pod installation.
+4. git installation.
 
 How to run?
 
