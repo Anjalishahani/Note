@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1008B7A8DC949978AE8A0DBE /* Pods_SecretNoteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E719A60525374779F12446 /* Pods_SecretNoteApp.framework */; };
+		7CFF447ADD0CFBAA1404F0F8 /* Pods_SecretNoteAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB5CB9FF6A5285AE13BA3E1 /* Pods_SecretNoteAppUITests.framework */; };
+		8987BE1471161FA6D20981D1 /* Pods_SecretNoteAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A124AAB74B01150CCFB28DFF /* Pods_SecretNoteAppTests.framework */; };
+		E30B1E3B23242E2A0070DF15 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E3923242E2A0070DF15 /* User+CoreDataClass.m */; };
+		E30B1E3C23242E2A0070DF15 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E3A23242E2A0070DF15 /* User+CoreDataProperties.m */; };
+		E30B1E4B232434CA0070DF15 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E47232434CA0070DF15 /* NoteView.m */; };
+		E30B1E4C232434CA0070DF15 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E4A232434CA0070DF15 /* LoginView.m */; };
+		E30B1E5123244B560070DF15 /* Note+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E4F23244B560070DF15 /* Note+CoreDataClass.m */; };
+		E30B1E5223244B560070DF15 /* Note+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E5023244B560070DF15 /* Note+CoreDataProperties.m */; };
+		E30B1E5523259C090070DF15 /* CreateNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30B1E5423259C090070DF15 /* CreateNoteViewController.m */; };
+		E3AD0006232E6210003079D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3AD0005232E6210003079D6 /* Assets.xcassets */; };
+		E3F912C02322DF8B00522097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912BF2322DF8B00522097 /* AppDelegate.m */; };
+		E3F912C32322DF8B00522097 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912C22322DF8B00522097 /* ViewController.m */; };
+		E3F912C62322DF8B00522097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F912C42322DF8B00522097 /* Main.storyboard */; };
+		E3F912C92322DF8B00522097 /* SecretNoteApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3F912C72322DF8B00522097 /* SecretNoteApp.xcdatamodeld */; };
+		E3F912CE2322DF8E00522097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F912CC2322DF8E00522097 /* LaunchScreen.storyboard */; };
+		E3F912D12322DF8E00522097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912D02322DF8E00522097 /* main.m */; };
+		E3F912DB2322DF8E00522097 /* SecretNoteAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912DA2322DF8E00522097 /* SecretNoteAppTests.m */; };
+		E3F912E62322DF8E00522097 /* SecretNoteAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912E52322DF8E00522097 /* SecretNoteAppUITests.m */; };
+		E3F912FC2323DF0B00522097 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F912FB2323DF0B00522097 /* NoteListViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3F912D72322DF8E00522097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3F912B32322DF8B00522097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3F912BA2322DF8B00522097;
+			remoteInfo = SecretNoteApp;
+		};
+		E3F912E22322DF8E00522097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3F912B32322DF8B00522097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3F912BA2322DF8B00522097;
+			remoteInfo = SecretNoteApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019C866899F1E858D7111A4C /* Pods-SecretNoteAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SecretNoteAppTests/Pods-SecretNoteAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B5AF45725CE1D4317C6301B /* Pods-SecretNoteAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteAppTests.release.xcconfig"; path = "Target Support Files/Pods-SecretNoteAppTests/Pods-SecretNoteAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		2BB5CB9FF6A5285AE13BA3E1 /* Pods_SecretNoteAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretNoteAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3777538477995BEC87D0C9AB /* Pods-SecretNoteAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-SecretNoteAppUITests/Pods-SecretNoteAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49E719A60525374779F12446 /* Pods_SecretNoteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretNoteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F595C1378C01AD697629CF /* Pods-SecretNoteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteApp.release.xcconfig"; path = "Target Support Files/Pods-SecretNoteApp/Pods-SecretNoteApp.release.xcconfig"; sourceTree = "<group>"; };
+		89DB7E5F02782210C2C0865C /* Pods-SecretNoteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteApp.debug.xcconfig"; path = "Target Support Files/Pods-SecretNoteApp/Pods-SecretNoteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A124AAB74B01150CCFB28DFF /* Pods_SecretNoteAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretNoteAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE55B71BB6A4C0C452723DF3 /* Pods-SecretNoteAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteAppUITests.release.xcconfig"; path = "Target Support Files/Pods-SecretNoteAppUITests/Pods-SecretNoteAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E30B1E31232403760070DF15 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E30B1E3723242E2A0070DF15 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E30B1E3823242E2A0070DF15 /* User+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		E30B1E3923242E2A0070DF15 /* User+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		E30B1E3A23242E2A0070DF15 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E30B1E47232434CA0070DF15 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteView.m; sourceTree = "<group>"; };
+		E30B1E48232434CA0070DF15 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		E30B1E49232434CA0070DF15 /* NoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteView.h; sourceTree = "<group>"; };
+		E30B1E4A232434CA0070DF15 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		E30B1E4D23244B560070DF15 /* Note+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E30B1E4E23244B560070DF15 /* Note+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Note+CoreDataClass.h"; sourceTree = "<group>"; };
+		E30B1E4F23244B560070DF15 /* Note+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataClass.m"; sourceTree = "<group>"; };
+		E30B1E5023244B560070DF15 /* Note+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Note+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E30B1E5323259C090070DF15 /* CreateNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateNoteViewController.h; sourceTree = "<group>"; };
+		E30B1E5423259C090070DF15 /* CreateNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateNoteViewController.m; sourceTree = "<group>"; };
+		E3AD0005232E6210003079D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3F912BB2322DF8B00522097 /* SecretNoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretNoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F912BE2322DF8B00522097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E3F912BF2322DF8B00522097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E3F912C12322DF8B00522097 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E3F912C22322DF8B00522097 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E3F912C52322DF8B00522097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3F912C82322DF8B00522097 /* SecretNoteApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecretNoteApp.xcdatamodel; sourceTree = "<group>"; };
+		E3F912CD2322DF8E00522097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3F912CF2322DF8E00522097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F912D02322DF8E00522097 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3F912D62322DF8E00522097 /* SecretNoteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretNoteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F912DA2322DF8E00522097 /* SecretNoteAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretNoteAppTests.m; sourceTree = "<group>"; };
+		E3F912DC2322DF8E00522097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F912E12322DF8E00522097 /* SecretNoteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretNoteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F912E52322DF8E00522097 /* SecretNoteAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretNoteAppUITests.m; sourceTree = "<group>"; };
+		E3F912E72322DF8E00522097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F912FA2323DF0B00522097 /* NoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		E3F912FB2323DF0B00522097 /* NoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NoteListViewController.m; path = ../NoteListViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3F912B82322DF8B00522097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1008B7A8DC949978AE8A0DBE /* Pods_SecretNoteApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912D32322DF8E00522097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8987BE1471161FA6D20981D1 /* Pods_SecretNoteAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912DE2322DF8E00522097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CFF447ADD0CFBAA1404F0F8 /* Pods_SecretNoteAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D74C7C65C5CB4BAFA3CF5E55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E30B1E31232403760070DF15 /* Security.framework */,
+				49E719A60525374779F12446 /* Pods_SecretNoteApp.framework */,
+				A124AAB74B01150CCFB28DFF /* Pods_SecretNoteAppTests.framework */,
+				2BB5CB9FF6A5285AE13BA3E1 /* Pods_SecretNoteAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8A267A28B32FDB005D1B3FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89DB7E5F02782210C2C0865C /* Pods-SecretNoteApp.debug.xcconfig */,
+				77F595C1378C01AD697629CF /* Pods-SecretNoteApp.release.xcconfig */,
+				019C866899F1E858D7111A4C /* Pods-SecretNoteAppTests.debug.xcconfig */,
+				2B5AF45725CE1D4317C6301B /* Pods-SecretNoteAppTests.release.xcconfig */,
+				3777538477995BEC87D0C9AB /* Pods-SecretNoteAppUITests.debug.xcconfig */,
+				AE55B71BB6A4C0C452723DF3 /* Pods-SecretNoteAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E30B1E3323240EDC0070DF15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E30B1E4D23244B560070DF15 /* Note+CoreDataProperties.h */,
+				E30B1E4E23244B560070DF15 /* Note+CoreDataClass.h */,
+				E30B1E4F23244B560070DF15 /* Note+CoreDataClass.m */,
+				E30B1E5023244B560070DF15 /* Note+CoreDataProperties.m */,
+				E30B1E3723242E2A0070DF15 /* User+CoreDataProperties.h */,
+				E30B1E3823242E2A0070DF15 /* User+CoreDataClass.h */,
+				E30B1E3923242E2A0070DF15 /* User+CoreDataClass.m */,
+				E30B1E3A23242E2A0070DF15 /* User+CoreDataProperties.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E30B1E46232434CA0070DF15 /* Model-Views */ = {
+			isa = PBXGroup;
+			children = (
+				E30B1E49232434CA0070DF15 /* NoteView.h */,
+				E30B1E47232434CA0070DF15 /* NoteView.m */,
+				E30B1E48232434CA0070DF15 /* LoginView.h */,
+				E30B1E4A232434CA0070DF15 /* LoginView.m */,
+			);
+			path = "Model-Views";
+			sourceTree = "<group>";
+		};
+		E3F912B22322DF8B00522097 = {
+			isa = PBXGroup;
+			children = (
+				E3F912BD2322DF8B00522097 /* SecretNoteApp */,
+				E3F912D92322DF8E00522097 /* SecretNoteAppTests */,
+				E3F912E42322DF8E00522097 /* SecretNoteAppUITests */,
+				E3F912BC2322DF8B00522097 /* Products */,
+				D74C7C65C5CB4BAFA3CF5E55 /* Frameworks */,
+				D8A267A28B32FDB005D1B3FB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E3F912BC2322DF8B00522097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3F912BB2322DF8B00522097 /* SecretNoteApp.app */,
+				E3F912D62322DF8E00522097 /* SecretNoteAppTests.xctest */,
+				E3F912E12322DF8E00522097 /* SecretNoteAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3F912BD2322DF8B00522097 /* SecretNoteApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3AD0005232E6210003079D6 /* Assets.xcassets */,
+				E30B1E46232434CA0070DF15 /* Model-Views */,
+				E30B1E3323240EDC0070DF15 /* Model */,
+				E3F912F92323147500522097 /* ViewControllers */,
+				E3F912BE2322DF8B00522097 /* AppDelegate.h */,
+				E3F912BF2322DF8B00522097 /* AppDelegate.m */,
+				E3F912C42322DF8B00522097 /* Main.storyboard */,
+				E3F912CC2322DF8E00522097 /* LaunchScreen.storyboard */,
+				E3F912CF2322DF8E00522097 /* Info.plist */,
+				E3F912D02322DF8E00522097 /* main.m */,
+				E3F912C72322DF8B00522097 /* SecretNoteApp.xcdatamodeld */,
+			);
+			path = SecretNoteApp;
+			sourceTree = "<group>";
+		};
+		E3F912D92322DF8E00522097 /* SecretNoteAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3F912DA2322DF8E00522097 /* SecretNoteAppTests.m */,
+				E3F912DC2322DF8E00522097 /* Info.plist */,
+			);
+			path = SecretNoteAppTests;
+			sourceTree = "<group>";
+		};
+		E3F912E42322DF8E00522097 /* SecretNoteAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E3F912E52322DF8E00522097 /* SecretNoteAppUITests.m */,
+				E3F912E72322DF8E00522097 /* Info.plist */,
+			);
+			path = SecretNoteAppUITests;
+			sourceTree = "<group>";
+		};
+		E3F912F92323147500522097 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3F912C12322DF8B00522097 /* ViewController.h */,
+				E3F912C22322DF8B00522097 /* ViewController.m */,
+				E3F912FA2323DF0B00522097 /* NoteListViewController.h */,
+				E3F912FB2323DF0B00522097 /* NoteListViewController.m */,
+				E30B1E5323259C090070DF15 /* CreateNoteViewController.h */,
+				E30B1E5423259C090070DF15 /* CreateNoteViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3F912BA2322DF8B00522097 /* SecretNoteApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F912EA2322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteApp" */;
+			buildPhases = (
+				6FFDD6FAD132143D91528466 /* [CP] Check Pods Manifest.lock */,
+				E3F912B72322DF8B00522097 /* Sources */,
+				E3F912B82322DF8B00522097 /* Frameworks */,
+				E3F912B92322DF8B00522097 /* Resources */,
+				A3EE3E827C59FB00AD2F95FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretNoteApp;
+			productName = SecretNoteApp;
+			productReference = E3F912BB2322DF8B00522097 /* SecretNoteApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3F912D52322DF8E00522097 /* SecretNoteAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F912ED2322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteAppTests" */;
+			buildPhases = (
+				AAC0D608949C3DA78E4E3314 /* [CP] Check Pods Manifest.lock */,
+				E3F912D22322DF8E00522097 /* Sources */,
+				E3F912D32322DF8E00522097 /* Frameworks */,
+				E3F912D42322DF8E00522097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3F912D82322DF8E00522097 /* PBXTargetDependency */,
+			);
+			name = SecretNoteAppTests;
+			productName = SecretNoteAppTests;
+			productReference = E3F912D62322DF8E00522097 /* SecretNoteAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3F912E02322DF8E00522097 /* SecretNoteAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3F912F02322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteAppUITests" */;
+			buildPhases = (
+				A20192C6A47E6B34EE380E83 /* [CP] Check Pods Manifest.lock */,
+				E3F912DD2322DF8E00522097 /* Sources */,
+				E3F912DE2322DF8E00522097 /* Frameworks */,
+				E3F912DF2322DF8E00522097 /* Resources */,
+				FDF8772EB287E169610F8DC0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3F912E32322DF8E00522097 /* PBXTargetDependency */,
+			);
+			name = SecretNoteAppUITests;
+			productName = SecretNoteAppUITests;
+			productReference = E3F912E12322DF8E00522097 /* SecretNoteAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3F912B32322DF8B00522097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "husky pestcontrol";
+				TargetAttributes = {
+					E3F912BA2322DF8B00522097 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					E3F912D52322DF8E00522097 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E3F912BA2322DF8B00522097;
+					};
+					E3F912E02322DF8E00522097 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = E3F912BA2322DF8B00522097;
+					};
+				};
+			};
+			buildConfigurationList = E3F912B62322DF8B00522097 /* Build configuration list for PBXProject "SecretNoteApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3F912B22322DF8B00522097;
+			productRefGroup = E3F912BC2322DF8B00522097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3F912BA2322DF8B00522097 /* SecretNoteApp */,
+				E3F912D52322DF8E00522097 /* SecretNoteAppTests */,
+				E3F912E02322DF8E00522097 /* SecretNoteAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3F912B92322DF8B00522097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F912CE2322DF8E00522097 /* LaunchScreen.storyboard in Resources */,
+				E3AD0006232E6210003079D6 /* Assets.xcassets in Resources */,
+				E3F912C62322DF8B00522097 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912D42322DF8E00522097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912DF2322DF8E00522097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FFDD6FAD132143D91528466 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretNoteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A20192C6A47E6B34EE380E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretNoteAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3EE3E827C59FB00AD2F95FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteApp/Pods-SecretNoteApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteApp/Pods-SecretNoteApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecretNoteApp/Pods-SecretNoteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC0D608949C3DA78E4E3314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretNoteAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF8772EB287E169610F8DC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteAppUITests/Pods-SecretNoteAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteAppUITests/Pods-SecretNoteAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecretNoteAppUITests/Pods-SecretNoteAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3F912B72322DF8B00522097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F912FC2323DF0B00522097 /* NoteListViewController.m in Sources */,
+				E30B1E5123244B560070DF15 /* Note+CoreDataClass.m in Sources */,
+				E3F912C92322DF8B00522097 /* SecretNoteApp.xcdatamodeld in Sources */,
+				E30B1E5223244B560070DF15 /* Note+CoreDataProperties.m in Sources */,
+				E30B1E3B23242E2A0070DF15 /* User+CoreDataClass.m in Sources */,
+				E30B1E4C232434CA0070DF15 /* LoginView.m in Sources */,
+				E30B1E5523259C090070DF15 /* CreateNoteViewController.m in Sources */,
+				E30B1E3C23242E2A0070DF15 /* User+CoreDataProperties.m in Sources */,
+				E3F912C32322DF8B00522097 /* ViewController.m in Sources */,
+				E3F912D12322DF8E00522097 /* main.m in Sources */,
+				E30B1E4B232434CA0070DF15 /* NoteView.m in Sources */,
+				E3F912C02322DF8B00522097 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912D22322DF8E00522097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F912DB2322DF8E00522097 /* SecretNoteAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F912DD2322DF8E00522097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3F912E62322DF8E00522097 /* SecretNoteAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3F912D82322DF8E00522097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3F912BA2322DF8B00522097 /* SecretNoteApp */;
+			targetProxy = E3F912D72322DF8E00522097 /* PBXContainerItemProxy */;
+		};
+		E3F912E32322DF8E00522097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3F912BA2322DF8B00522097 /* SecretNoteApp */;
+			targetProxy = E3F912E22322DF8E00522097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3F912C42322DF8B00522097 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3F912C52322DF8B00522097 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3F912CC2322DF8E00522097 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3F912CD2322DF8E00522097 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3F912E82322DF8E00522097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E3F912E92322DF8E00522097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3F912EB2322DF8E00522097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DB7E5F02782210C2C0865C /* Pods-SecretNoteApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Distribution: sayantan sengupta (BD8L9JUUYB)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BD8L9JUUYB;
+				INFOPLIST_FILE = SecretNoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"EncryptedCoreData\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.SecretNoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = testAppProvprofile;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3F912EC2322DF8E00522097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F595C1378C01AD697629CF /* Pods-SecretNoteApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Distribution: sayantan sengupta (BD8L9JUUYB)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = BD8L9JUUYB;
+				INFOPLIST_FILE = SecretNoteApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"EncryptedCoreData\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"SQLCipher\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testApp.SecretNoteApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = testAppProvprofile;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E3F912EE2322DF8E00522097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019C866899F1E858D7111A4C /* Pods-SecretNoteAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecretNoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inc.PestControl.HuskyPestPro.SecretNoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretNoteApp.app/SecretNoteApp";
+			};
+			name = Debug;
+		};
+		E3F912EF2322DF8E00522097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5AF45725CE1D4317C6301B /* Pods-SecretNoteAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecretNoteAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inc.PestControl.HuskyPestPro.SecretNoteAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecretNoteApp.app/SecretNoteApp";
+			};
+			name = Release;
+		};
+		E3F912F12322DF8E00522097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3777538477995BEC87D0C9AB /* Pods-SecretNoteAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecretNoteAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inc.PestControl.HuskyPestPro.SecretNoteAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecretNoteApp;
+			};
+			name = Debug;
+		};
+		E3F912F22322DF8E00522097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE55B71BB6A4C0C452723DF3 /* Pods-SecretNoteAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SecretNoteAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = inc.PestControl.HuskyPestPro.SecretNoteAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecretNoteApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3F912B62322DF8B00522097 /* Build configuration list for PBXProject "SecretNoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F912E82322DF8E00522097 /* Debug */,
+				E3F912E92322DF8E00522097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F912EA2322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F912EB2322DF8E00522097 /* Debug */,
+				E3F912EC2322DF8E00522097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F912ED2322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F912EE2322DF8E00522097 /* Debug */,
+				E3F912EF2322DF8E00522097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3F912F02322DF8E00522097 /* Build configuration list for PBXNativeTarget "SecretNoteAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F912F12322DF8E00522097 /* Debug */,
+				E3F912F22322DF8E00522097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E3F912C72322DF8B00522097 /* SecretNoteApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E3F912C82322DF8B00522097 /* SecretNoteApp.xcdatamodel */,
+			);
+			currentVersion = E3F912C82322DF8B00522097 /* SecretNoteApp.xcdatamodel */;
+			path = SecretNoteApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E3F912B32322DF8B00522097 /* Project object */;
+}
