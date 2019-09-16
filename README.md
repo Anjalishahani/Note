@@ -2,7 +2,7 @@
 # SecretNotes
 Demo app
 
-Pre-requirement
+Prerequisites
 1. Mac machine required
 2. XCode installed. 
 3. Pod install : See Note Below *
